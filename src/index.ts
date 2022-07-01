@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import serveStatic from "serve-static";
 import mongoose from "mongoose";
 import Book from "./model/book.model";
-//import cors from "cors"
+import cors from "cors"
 // Instancier Express
 const app=express();
 
@@ -14,6 +14,7 @@ app.use(bodyParser.json())
 app.use(serveStatic("public"));
 
 // Activer CORS
+app.use(cors()); //pour permetre une application externe a acceder a l'application backend
 
 // Connection à MongoDB
 const uri:string="mongodb://localhost:27017/biblio";
