@@ -8,7 +8,7 @@ import cors from "cors"
 const app=express();
 
 // Middleware bodyParser pour parser le corps des requetes en Json
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
 // Middlewere pour configurer le dossier des ressources statique
 app.use(serveStatic("public"));
