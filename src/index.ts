@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import serveStatic from "serve-static";
 import mongoose from "mongoose";
 import Book from "./model/book.model";
-import cors from "cors"
+import cors from "cors";
 // Instancier Express
 const app=express();
 
